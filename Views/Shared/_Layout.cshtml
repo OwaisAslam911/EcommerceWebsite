@@ -9,28 +9,52 @@
     <link rel="stylesheet" href="~/EcommerceWebsite.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EcommerceWebsite</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fs-5 ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="cont">
+
+                        <div class="col-lg-8 col-8 text-left search-div">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                           aria-label="Dollar amount (with dot and two decimal places)">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav  ms-auto">
+                        <!-- <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#"><span><i class="fa-solid fa-house"></i></span>
+                            Home</a>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" href="#"><span><i class="fa-regular fa-user"></i></span>Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" href="#"><span><i class="fa-solid fa-shop"></i></span>Become A Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span><i class="fa-solid fa-cart-shopping"></i></span>Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></a>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
+    </div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
