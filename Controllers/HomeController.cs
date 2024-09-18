@@ -25,6 +25,18 @@ namespace EcommerceWebsite.Controllers
         public IActionResult AboutUs()
         {
             return View();
+        } 
+        public IActionResult Shop()
+        {
+            return View();
+        }  
+        public IActionResult Store()
+        {
+            return View();
+        }
+        public IActionResult StoreList()
+        {
+            return View();
         }   
         public IActionResult Login()
         {
