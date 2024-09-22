@@ -16,6 +16,10 @@ namespace EcommerceWebsite.Controllers
         public IActionResult Index()
         {
             return View();
+        }    
+        public IActionResult Product()
+        {
+            return View();
         }
         public IActionResult Contact()
         {
@@ -42,6 +46,35 @@ namespace EcommerceWebsite.Controllers
         {
             return View();
         } 
+        public IActionResult BecomeSeller()
+        {
+            return View();
+        } 
+        public IActionResult ErrorPage()
+        {
+            return View();
+        } 
+        public IActionResult ComingSoom()
+        {
+            return View();
+        }
+        public IActionResult Cart()
+        {
+            return View();
+        } 
+        public IActionResult Checkout()
+        {
+            return View();
+        } 
+        public IActionResult Compare()
+        {
+            return View();
+        } 
+        public IActionResult Wishlist()
+        {
+            return View();
+        } 
+
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

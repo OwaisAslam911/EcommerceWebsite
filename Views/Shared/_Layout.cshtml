@@ -73,17 +73,17 @@
 
                         <div class="dropdown">
                             <a href="#language">
-                                <img src="assets/images/flags/eng.png" alt="ENG Flag" width="14"
+                                <img src="~/assets/images/flags/eng.png" alt="ENG Flag" width="14"
                                      height="8" class="dropdown-image" /> ENG
                             </a>
                             <div class="dropdown-box">
                                 <a href="#ENG">
-                                    <img src="assets/images/flags/eng.png" alt="ENG Flag" width="14" height="8"
+                                    <img src="~/assets/images/flags/eng.png" alt="ENG Flag" width="14" height="8"
                                          class="dropdown-image" />
                                     ENG
                                 </a>
                                 <a href="#FRA">
-                                    <img src="assets/images/flags/fra.png" alt="FRA Flag" width="14" height="8"
+                                    <img src="~/assets/images/flags/fra.png" alt="FRA Flag" width="14" height="8"
                                          class="dropdown-image" />
                                     FRA
                                 </a>
@@ -110,7 +110,7 @@
                         <a href="#" class="mobile-menu-toggle  w-icon-hamburger" aria-label="menu-toggle">
                         </a>
                         <a href="demo1.html" class="logo ml-lg-0">
-                            <img src="assets/images/logo.png" alt="logo" width="144" height="45" />
+                            <img src="~/assets/images/logo.png" alt="logo" width="144" height="45" />
                         </a>
                         <form method="get" action="#" class="header-search hs-expanded hs-round d-none d-md-flex input-wrapper">
                             <div class="select-box">
@@ -144,11 +144,11 @@
                                 <a href="tel:#" class="phone-number font-weight-bolder ls-50">0(800)123-456</a>
                             </div>
                         </div>
-                        <a class="wishlist label-down link d-xs-show" href="wishlist.html">
+                        <a class="wishlist label-down link d-xs-show" asp-controller="Home" asp-action="Wishlist">
                             <i class="w-icon-heart"></i>
                             <span class="wishlist-label d-lg-show">Wishlist</span>
                         </a>
-                        <a class="compare label-down link d-xs-show" href="compare.html">
+                        <a class="compare label-down link d-xs-show" asp-controller="Home" asp-action="Compare">
                             <i class="w-icon-compare"></i>
                             <span class="compare-label d-lg-show">Compare</span>
                         </a>
@@ -169,7 +169,7 @@
                                 <div class="products">
                                     <div class="product product-cart">
                                         <div class="product-detail">
-                                            <a href="product-default.html" class="product-name">
+                                            <a asp-controller="Home" asp-action="Product" class="product-name">
                                                 Beige knitted
                                                 elas<br>tic
                                                 runner shoes
@@ -180,8 +180,8 @@
                                             </div>
                                         </div>
                                         <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img src="assets/images/cart/product-1.jpg" alt="product" height="84"
+                                            <a asp-controller="Home" asp-action="Product">
+                                                <img src="~/assets/images/cart/product-1.jpg" alt="product" height="84"
                                                      width="94" />
                                             </a>
                                         </figure>
@@ -192,7 +192,8 @@
 
                                     <div class="product product-cart">
                                         <div class="product-detail">
-                                            <a href="product-default.html" class="product-name">
+                                            <a asp-controller="Home" asp-action="Product"
+                                                class="product-name">
                                                 Blue utility
                                                 pina<br>fore
                                                 denim dress
@@ -203,8 +204,9 @@
                                             </div>
                                         </div>
                                         <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img src="assets/images/cart/product-2.jpg" alt="product" width="84"
+                                            <a asp-controller="Home" asp-action="Product">
+                                                
+                                                <img src="~/assets/images/cart/product-2.jpg" alt="product" width="84"
                                                      height="94" />
                                             </a>
                                         </figure>
@@ -220,8 +222,8 @@
                                 </div>
 
                                 <div class="cart-action">
-                                    <a href="cart.html" class="btn btn-dark btn-outline btn-rounded">View Cart</a>
-                                    <a href="checkout.html" class="btn btn-primary  btn-rounded">Checkout</a>
+                                    <a asp-controller="Home" asp-action="Cart"> class="btn btn-dark btn-outline btn-rounded">View Cart</a>
+                                    <a asp-controller="Home" asp-action="Checkout"> class="btn btn-primary  btn-rounded">Checkout</a>
                                 </div>
                             </div>
                             <!-- End of Dropdown Box -->
@@ -246,7 +248,7 @@
                                 <div class="dropdown-box">
                                     <ul class="menu vertical-menu category-menu">
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-tshirt2"></i>Fashion
                                             </a>
                                             <ul class="megamenu">
@@ -255,25 +257,25 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">New Arrivals</a>
+                                                            <a asp-controller="Home" asp-action="Shop">New Arrivals</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Best Sellers</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Best Sellers</a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Trending</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Clothing</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Shoes</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Bags</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Trending</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Clothing</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Shoes</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Bags</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Accessories</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Accessories</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Jewlery &
                                                                 Watches
                                                             </a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Sale</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Sale</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -281,20 +283,20 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">New Arrivals</a>
+                                                            <a asp-controller="Home" asp-action="Shop">New Arrivals</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Best Sellers</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Best Sellers</a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Trending</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Clothing</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Shoes</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Bags</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Trending</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Clothing</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Shoes</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Bags</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Accessories</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Accessories</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Jewlery &
                                                                 Watches
                                                             </a>
@@ -304,7 +306,7 @@
                                                 <li>
                                                     <div class="banner-fixed menu-banner menu-banner2">
                                                         <figure>
-                                                            <img src="assets/images/menu/banner-2.jpg" alt="Menu Banner"
+                                                            <img src="~/assets/images/menu/banner-2.jpg" alt="Menu Banner"
                                                                  width="235" height="347" />
                                                         </figure>
                                                         <div class="banner-content">
@@ -323,7 +325,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-home"></i>Home & Garden
                                             </a>
                                             <ul class="megamenu">
@@ -332,40 +334,40 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Beds, Frames &
                                                                 Bases
                                                             </a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Dressers</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Dressers</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Nightstands</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Nightstands</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Kid's Beds &
                                                                 Headboards
                                                             </a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Armoires</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Armoires</a></li>
                                                     </ul>
 
                                                     <h4 class="menu-title mt-1">Living Room</h4>
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Coffee Tables</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Coffee Tables</a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Chairs</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Tables</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Chairs</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Tables</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Futons & Sofa
                                                                 Beds
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Cabinets &
                                                                 Chests
                                                             </a>
@@ -377,15 +379,15 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Office Chairs</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Office Chairs</a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Desks</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Bookcases</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Desks</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Bookcases</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">File Cabinets</a>
+                                                            <a asp-controller="Home" asp-action="Shop">File Cabinets</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Breakroom
                                                                 Tables
                                                             </a>
@@ -396,33 +398,33 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Dining Sets</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Dining Sets</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Kitchen Storage
                                                                 Cabinets
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Bashers Racks</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Bashers Racks</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Dining Chairs</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Dining Chairs</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Dining Room
                                                                 Tables
                                                             </a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Bar Stools</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Bar Stools</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <div class="menu-banner banner-fixed menu-banner3">
                                                         <figure>
-                                                            <img src="assets/images/menu/banner-3.jpg" alt="Menu Banner"
+                                                            <img src="~/assets/images/menu/banner-3.jpg" alt="Menu Banner"
                                                                  width="235" height="461" />
                                                         </figure>
                                                         <div class="banner-content">
@@ -448,7 +450,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-electronics"></i>Electronics
                                             </a>
                                             <ul class="megamenu">
@@ -457,21 +459,21 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Desktop
                                                                 Computers
                                                             </a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Monitors</a></li>
-                                                        <li><a href="shop-fullwidth-banner.html">Laptops</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Monitors</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Laptops</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Hard Drives &amp;
                                                                 Storage
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Computer
                                                                 Accessories
                                                             </a>
@@ -481,16 +483,16 @@
                                                     <h4 class="menu-title mt-1">TV &amp; Video</h4>
                                                     <hr class="divider">
                                                     <ul>
-                                                        <li><a href="shop-fullwidth-banner.html">TVs</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">TVs</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Home Audio
                                                                 Speakers
                                                             </a>
                                                         </li>
-                                                        <li><a href="shop-fullwidth-banner.html">Projectors</a></li>
+                                                        <li><a asp-controller="Home" asp-action="Shop">Projectors</a></li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Media Streaming
                                                                 Devices
                                                             </a>
@@ -502,25 +504,25 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Digital SLR
                                                                 Cameras
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Sports & Action
                                                                 Cameras
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Camera Lenses</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Camera Lenses</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Photo Printer</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Photo Printer</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Digital Memory
                                                                 Cards
                                                             </a>
@@ -531,19 +533,19 @@
                                                     <hr class="divider">
                                                     <ul>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Carrier Phones</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Carrier Phones</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">Unlocked Phones</a>
+                                                            <a asp-controller="Home" asp-action="Shop">Unlocked Phones</a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Phone & Cellphone
                                                                 Cases
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="shop-fullwidth-banner.html">
+                                                            <a asp-controller="Home" asp-action="Shop">
                                                                 Cellphone
                                                                 Chargers
                                                             </a>
@@ -553,7 +555,7 @@
                                                 <li>
                                                     <div class="menu-banner banner-fixed menu-banner4">
                                                         <figure>
-                                                            <img src="assets/images/menu/banner-4.jpg" alt="Menu Banner"
+                                                            <img src="~/assets/images/menu/banner-4.jpg" alt="Menu Banner"
                                                                  width="235" height="433" />
                                                         </figure>
                                                         <div class="banner-content">
@@ -578,7 +580,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-furniture"></i>Furniture
                                             </a>
                                             <ul class="megamenu type2">
@@ -588,15 +590,15 @@
                                                         <hr class="divider" />
                                                         <ul>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Sofas & Couches</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Sofas & Couches</a>
                                                             </li>
-                                                            <li><a href="shop-fullwidth-banner.html">Armchairs</a></li>
-                                                            <li><a href="shop-fullwidth-banner.html">Bed Frames</a></li>
+                                                            <li><a asp-controller="Home" asp-action="Shop">Armchairs</a></li>
+                                                            <li><a asp-controller="Home" asp-action="Shop">Bed Frames</a></li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Beside Tables</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Beside Tables</a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Dressing Tables</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Dressing Tables</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -605,17 +607,17 @@
                                                         <hr class="divider" />
                                                         <ul>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Light Bulbs</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Light Bulbs</a>
                                                             </li>
-                                                            <li><a href="shop-fullwidth-banner.html">Lamps</a></li>
+                                                            <li><a asp-controller="Home" asp-action="Shop">Lamps</a></li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Celling Lights</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-fullwidth-banner.html">Wall Lights</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Celling Lights</a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">
+                                                                <a asp-controller="Home" asp-action="Shop">Wall Lights</a>
+                                                            </li>
+                                                            <li>
+                                                                <a asp-controller="Home" asp-action="Shop">
                                                                     Bathroom
                                                                     Lighting
                                                                 </a>
@@ -627,22 +629,22 @@
                                                         <hr class="divider" />
                                                         <ul>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">
+                                                                <a asp-controller="Home" asp-action="Shop">
                                                                     Decorative
                                                                     Accessories
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">
+                                                                <a asp-controller="Home" asp-action="Shop">
                                                                     Candals &
                                                                     Holders
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Home Fragrance</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Home Fragrance</a>
                                                             </li>
-                                                            <li><a href="shop-fullwidth-banner.html">Mirrors</a></li>
-                                                            <li><a href="shop-fullwidth-banner.html">Clocks</a></li>
+                                                            <li><a asp-controller="Home" asp-action="Shop">Mirrors</a></li>
+                                                            <li><a asp-controller="Home" asp-action="Shop">Clocks</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3 col-lg-3 col-6">
@@ -650,28 +652,28 @@
                                                         <hr class="divider" />
                                                         <ul>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">
+                                                                <a asp-controller="Home" asp-action="Shop">
                                                                     Garden
                                                                     Furniture
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Lawn Mowers</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Lawn Mowers</a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">
+                                                                <a asp-controller="Home" asp-action="Shop">
                                                                     Pressure
                                                                     Washers
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">
+                                                                <a asp-controller="Home" asp-action="Shop">
                                                                     All Garden
                                                                     Tools
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="shop-fullwidth-banner.html">Outdoor Dining</a>
+                                                                <a asp-controller="Home" asp-action="Shop">Outdoor Dining</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -680,7 +682,7 @@
                                                     <div class="col-6">
                                                         <div class="banner banner-fixed menu-banner5 br-xs">
                                                             <figure>
-                                                                <img src="assets/images/menu/banner-5.jpg" alt="Banner"
+                                                                <img src="~/assets/images/menu/banner-5.jpg" alt="Banner"
                                                                      width="410" height="123"
                                                                      style="background-color: #D2D2D2;" />
                                                             </figure>
@@ -700,7 +702,7 @@
                                                     <div class="col-6">
                                                         <div class="banner banner-fixed menu-banner5 br-xs">
                                                             <figure>
-                                                                <img src="assets/images/menu/banner-6.jpg" alt="Banner"
+                                                                <img src="~/assets/images/menu/banner-6.jpg" alt="Banner"
                                                                      width="410" height="123"
                                                                      style="background-color: #9F9888;" />
                                                             </figure>
@@ -721,37 +723,37 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-heartbeat"></i>Healthy & Beauty
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-gift"></i>Gift Ideas
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-gamepad"></i>Toy & Games
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-ice-cream"></i>Cooking
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-ios"></i>Smart Phones
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-camera"></i>Cameras & Photo
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-fullwidth-banner.html">
+                                            <a asp-controller="Home" asp-action="Shop">
                                                 <i class="w-icon-ruby"></i>Accessories
                                             </a>
                                         </li>
@@ -770,7 +772,7 @@
                                         <a asp-controller="Home" asp-action="Index">Home</a>
                                     </li>
                                     <li>
-                                        <a asp-controller="Home" asp-action="About">About</a>
+                                        <a asp-controller="Home" asp-action="AboutUs">About</a>
                                     </li>
                                     <li>
                                         <a asp-controller="Home" asp-action="Contact">contact-us</a>
