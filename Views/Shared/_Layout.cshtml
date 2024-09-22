@@ -91,10 +91,10 @@
                         </div>
                         <!-- End of Dropdown Menu -->
                         <span class="divider d-lg-show"></span>
-                        <a href="blog.html" class="d-lg-show">Blog</a>
-                        <a href="contact-us.html" class="d-lg-show">Contact Us</a>
-                        <a href="my-account.html" class="d-lg-show">My Account</a>
-                        <a href="assets/ajax/login.html" class="d-lg-show login sign-in">
+                        <a asp-controller="Home" asp-action="Blog" class="d-lg-show">Blog</a>
+                        <a asp-controller="Home" asp-action="Contact" class="d-lg-show">Contact Us</a>
+                        <a asp-controller="Home" asp-action="Account" class="d-lg-show">My Account</a>
+                        <a asp-controller="Home" asp-action="Login" class="d-lg-show login sign-in">
                             <i class="w-icon-account"></i>Sign In
                         </a>
                         <span class="delimiter d-lg-show">/</span>
@@ -109,7 +109,7 @@
                     <div class="header-left mr-md-4">
                         <a href="#" class="mobile-menu-toggle  w-icon-hamburger" aria-label="menu-toggle">
                         </a>
-                        <a href="demo1.html" class="logo ml-lg-0">
+                        <a asp-controller="Home" asp-action="Index" class="logo ml-lg-0">
                             <img src="~/assets/images/logo.png" alt="logo" width="144" height="45" />
                         </a>
                         <form method="get" action="#" class="header-search hs-expanded hs-round d-none d-md-flex input-wrapper">
@@ -163,7 +163,8 @@
                             <div class="dropdown-box">
                                 <div class="cart-header">
                                     <span>Shopping Cart</span>
-                                    <a href="#" class="btn-close">Close<i class="w-icon-long-arrow-right"></i></a>
+                                    <a asp-controller="Home" asp-action="Cart" class="btn-close">Close<i class="w-icon-long-arrow-right"></i></a>
+                                    <a asp-controller="Home" asp-action="Cart" class="btn-close">Close<i class="w-icon-long-arrow-right"></i></a>
                                 </div>
 
                                 <div class="products">
@@ -315,7 +316,7 @@
                                                                 <strong class="text-primary text-uppercase">20%Off</strong>
                                                             </div>
                                                             <h3 class="banner-title ls-normal">Hot Sales</h3>
-                                                            <a href="shop-banner-sidebar.html"
+                                                            <a asp-controller="Home" asp-action="Shop"
                                                                class="btn btn-dark btn-sm btn-link btn-slide-right btn-icon-right">
                                                                 Shop Now<i class="w-icon-long-arrow-right"></i>
                                                             </a>
@@ -440,7 +441,7 @@
                                                                     Off
                                                                 </span>
                                                             </div>
-                                                            <a href="shop-banner-sidebar.html"
+                                                            <a asp-controller="Home" asp-action="Shop"
                                                                class="btn btn-white btn-link btn-sm btn-slide-right btn-icon-right">
                                                                 Shop Now<i class="w-icon-long-arrow-right"></i>
                                                             </a>
@@ -569,7 +570,7 @@
                                                             <div class="banner-price-info text-secondary font-weight-bolder text-uppercase text-secondary">
                                                                 20% Off
                                                             </div>
-                                                            <a href="shop-banner-sidebar.html"
+                                                            <a asp-controller="Home" asp-action="Shop"
                                                                class="btn btn-white btn-outline btn-sm btn-rounded">
                                                                 Shop
                                                                 Now
@@ -758,7 +759,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="shop-banner-sidebar.html"
+                                            <a asp-controller="Home" asp-action="Shop"
                                                class="font-weight-bold text-primary text-uppercase ls-25">
                                                 View All Categories<i class="w-icon-angle-right"></i>
                                             </a>

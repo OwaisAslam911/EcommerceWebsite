@@ -25,6 +25,10 @@ namespace EcommerceWebsite.Controllers
         {
             return View();
         }
+         public IActionResult FAQ()
+        {
+            return View();
+        }
 
         public IActionResult AboutUs()
         {
