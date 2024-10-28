@@ -62,6 +62,7 @@
                         <p class="welcome-msg">Welcome to Wolmart Store message or remove it!</p>
                     </div>
                     <div class="header-right">
+                        <a asp-action="Home" asp-controller="Admin">admin</a>
                         <div class="dropdown">
                             <a href="#currency">USD</a>
                             <div class="dropdown-box">
@@ -91,14 +92,14 @@
                         </div>
                         <!-- End of Dropdown Menu -->
                         <span class="divider d-lg-show"></span>
-                        <a asp-controller="Home" asp-action="Blog" class="d-lg-show">Blog</a>
+                        @* <a asp-controller="Home" asp-action="Blog" class="d-lg-show">Blog</a> *@
                         <a asp-controller="Home" asp-action="Contact" class="d-lg-show">Contact Us</a>
                         <a asp-controller="Home" asp-action="Account" class="d-lg-show">My Account</a>
                         <a asp-controller="Home" asp-action="Login" class="d-lg-show login sign-in">
                             <i class="w-icon-account"></i>Sign In
                         </a>
                         <span class="delimiter d-lg-show">/</span>
-                        <a href="assets/ajax/login.html" class="ml-0 d-lg-show login register">Register</a>
+                        <a asp-controller="Home" asp-action="Signup" class="ml-0 d-lg-show login register">Register</a>
                     </div>
                 </div>
             </div>
@@ -778,9 +779,9 @@
                                     <li>
                                         <a asp-controller="Home" asp-action="Contact">contact-us</a>
                                     </li>
-                                    <li>
+                                    @* <li>
                                         <a asp-controller="Home" asp-action="Blogs">Blogs</a>
-                                    </li>
+                                    </li> *@
                                     <li>
                                         <a asp-controller="Home" asp-action="FAQ">FAQs</a>
                                     </li>
