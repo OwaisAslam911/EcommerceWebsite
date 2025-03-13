@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 namespace EcommerceWebsite.Controllers
 {
-    public class AdminController1 : Controller
+    public class AdminController : Controller
     {
         public IActionResult Home()
         {

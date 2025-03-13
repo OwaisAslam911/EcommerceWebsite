@@ -20,6 +20,7 @@ namespace EcommerceWebsite.Models
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Color> Colors { get; set; } = null!;
         public virtual DbSet<Discount> Discounts { get; set; } = null!;
+        public virtual DbSet<Message> Messages { get; set; } = null!;
         public virtual DbSet<Offer> Offers { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<OrderItem> OrderItems { get; set; } = null!;
@@ -35,6 +36,7 @@ namespace EcommerceWebsite.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            
            
         }
 
@@ -100,6 +102,21 @@ namespace EcommerceWebsite.Models
                     .WithMany(p => p.Discounts)
                     .HasForeignKey(d => d.DiscountStatus)
                     .HasConstraintName("FK__Discounts__Disco__66603565");
+            });
+
+            modelBuilder.Entity<Message>(entity =>
+            {
+                entity.Property(e => e.Email)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Message1)
+                    .IsUnicode(false)
+                    .HasColumnName("Message");
+
+                entity.Property(e => e.SenderName)
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Offer>(entity =>

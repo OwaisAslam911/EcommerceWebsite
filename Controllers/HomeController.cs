@@ -30,13 +30,18 @@ namespace EcommerceWebsite.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Contact(Review review)
+        public IActionResult Contact(Message msg)
         {
-            if (ModelState.IsValid)
+            Message message = new Message()
             {
-                
-            }
-            return View();
+                SenderName = msg.SenderName,
+                Email = msg.Email,
+                Message1 = msg.Message1,
+            };
+            
+            context.Messages.Add(message);
+            context.SaveChanges();
+            return RedirectToAction("Contact");
         }
          public IActionResult FAQ()
         {
@@ -73,6 +78,19 @@ namespace EcommerceWebsite.Controllers
         {
             var name = context.Users.Where(option => option.UserName == adduser.UserName).FirstOrDefault();
             var email = context.Users.Where(option => option.UserEmail == adduser.UserEmail).FirstOrDefault();
+            if(name != null )
+            {
+                ViewBag.uniqueName = "Name You Entered is already Exist Please Enter another UserName";
+            }else if(email != null) {
+                ViewBag.uniqueEmail = "Email You entered is already Exist Please Enter another Email";
+
+            }
+            else
+            {
+                context.Users.Add(adduser);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
             return View();
         }
         public IActionResult BecomeSeller()

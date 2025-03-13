@@ -1,5 +1,6 @@
 ﻿@model EcommerceWebsite.Models.User;
 @{
+    Layout = null;
     ViewData["Title"] = "Signup";
 }
 
@@ -40,30 +41,28 @@
                         <a href="#sign-up" class="nav-link">Sign Up</a>
                         </li>
                     </ul>
+                    <form method="post"> 
                     <div class="tab-pane" id="sign-up">
                         <div class="form-group">
                             <label>Your User Name</label>
-                            <input type="text" class="form-control" name="serName" asp-for="serName" id="email_1" required>
+                            <input type="text" class="form-control" name="UserName" asp-for="UserName" id="email_1" required>
                         </div>
                        
                         <div class="form-group">
                             <label>Your email address *</label>
-                            <input type="text" class="form-control" name="email_1" id="email_1" required>
+                            <input type="text" class="form-control" name="UserEmail" asp-for="UserEmail" id="email_1" required>
                         </div>
 
                         <div class="form-group">
                             <label>Your Phone Number</label>
-                            <input type="text" class="form-control" name="email_1" id="email_1" required>
+                            <input type="text" class="form-control" name="UserPhone" asp-for="UserPhone" id="email_1" required>
                         </div>
                         
-                        <div class="form-group">
-                            <label>Your  address *</label>
-                            <input type="text" class="form-control" name="email_1" id="email_1" required>
-                        </div>
+                      
 
                         <div class="form-group mb-5">
                             <label>Password *</label>
-                            <input type="text" class="form-control" name="password_1" id="password_1" required>
+                            <input type="text" class="form-control" name="UserPassword" asp-for="UserPassword" id="password_1" required>
                         </div>
                         <p>
                             Your personal data will be used to support your experience
@@ -77,6 +76,7 @@
                         </div>
                         <a href="#" class="btn btn-primary">Sign Up</a>
                     </div>
+                    </form>
                     <p class="text-center">Sign in with social account</p>
                     <div class="social-icons social-icon-border-color d-flex justify-content-center">
                         <a href="#" class="social-icon social-facebook w-icon-facebook"></a>
